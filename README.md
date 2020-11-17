@@ -1,5 +1,7 @@
 # levelup
 
+Level up is a collection of source code with tests that I blog and youtube about. 
+
 ## How to run 
 * Only Prereq is you need java 8+ installed on your machine.
 ```
