@@ -18,13 +18,13 @@ public class LongestIncreasingSubsequence {
         dp[0] = 1;
         int maxans = 1;
         for (int i = 1; i < dp.length; i++) {
-            int maxval = 0;
+            int tempMax = 0;
             for (int j = 0; j < i; j++) {
                 if (nums[i] > nums[j]) {
-                    maxval = Math.max(maxval, dp[j]);
+                    tempMax = Math.max(tempMax, dp[j]);
                 }
             }
-            dp[i] = maxval + 1;
+            dp[i] = tempMax + 1;
             maxans = Math.max(maxans, dp[i]);
         }
         return maxans;
