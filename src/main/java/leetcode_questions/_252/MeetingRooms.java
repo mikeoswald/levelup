@@ -18,11 +18,7 @@ public class MeetingRooms {
 
         //need to sort the [][] array
         //Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
-        //Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
-        //Arrays.sort(intervals, (i1, i2) -> i1.start - i2.start);
-
-        Comparator<int[]> c= Comparator.comparingInt((int[] a) -> a[0]);
-        Arrays.sort(intervals, c);
+        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
 
         for (int i = 0; i < intervals.length - 1; i ++ ) {
             int currEnd = intervals[i][1];

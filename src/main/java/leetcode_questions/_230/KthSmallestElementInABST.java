@@ -19,6 +19,7 @@ public class KthSmallestElementInABST {
         System.out.println(new KthSmallestElementInABST().kthSmallest(root, 1));
         System.out.println(new KthSmallestElementInABST().kthSmallest(root, 3));
     }
+
     public int kthSmallest(TreeNode root, int k) {
         List<Integer> res = new ArrayList<>();
         helper(root,  res, k);
